@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Mobile-First*/
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("./images/bg-intro-mobile.png");
+  background-color: var(--primary-red);
+  color: white;
+}
+header {
+  text-align: center;
+  margin: 4rem auto 2rem auto;
+}
+header h1 {
+  font-weight: 700;
+  line-height: 2.1rem;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+header p {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 2.3rem 0 2.3rem;
+}
+main {
+  margin: 1rem;
+  margin-top: 3rem;
+}
+main figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--accent-blue);
+  width: 100%;
+  height: 4rem;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+#free-texts {
+  font-weight: 600;
+}
+main form {
+  background: white;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 1.5rem;
+}
+
+main input {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  outline: 0;
+  border: 1px solid var(--neutral-grayish-blue);
+  border-radius: 8px;
+  color: black;
+  font-weight: 500;
+  padding-left: 1.2rem;
+}
+main button {
+  width: 100%;
+  background: var(--primary-green);
+  outline: 0;
+  border: 0;
+  height: 3rem;
+  border-radius: 8px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.TandC {
+  color: var(--neutral-dark-blue);
+  margin: 1rem 0 0 0;
+  padding: 0 0.3rem 0 0.3rem;
+
+  text-align: center;
+  font-size: 14px;
+}
+footer {
+  text-align: center;
+}
+/* Tablet*/
+@media screen and (min-width: 600px) {
+  header {
+    width: 80%;
+  }
+  main {
+    width: 80%;
+    margin: 3rem auto 1rem auto;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1000px) {
+  body {
+    background: url("./images/bg-intro-desktop.png");
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+  header {
+    width: 35rem;
+  }
+  header h1 {
+    margin: 0.5rem;
+  }
+  header p {
+    padding: 0 2rem 0 2rem;
+  }
+
+  main {
+    width: 35rem;
+  }
+  main button:hover {
+    background: hsla(154, 59%, 51%, 0.863);
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
